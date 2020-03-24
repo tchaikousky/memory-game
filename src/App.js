@@ -1,4 +1,5 @@
 import React from 'react';
+import MemoryCard from './components/MemoryCard.jsx';
 
 import './App.css';
 
@@ -11,6 +12,30 @@ function App() {
           Match cards to win.
         </h3>
       </header>
+      <div>
+        <MemoryCard />
+        <MemoryCard />
+        <MemoryCard />
+        <MemoryCard />
+      </div>
+      <div>
+        <MemoryCard />
+        <MemoryCard />
+        <MemoryCard />
+        <MemoryCard />
+      </div>
+      <div>
+        <MemoryCard />
+        <MemoryCard />
+        <MemoryCard />
+        <MemoryCard />
+      </div>
+      <div>
+        <MemoryCard />
+        <MemoryCard />
+        <MemoryCard />
+        <MemoryCard />
+      </div>
     </div>
   );
 }
