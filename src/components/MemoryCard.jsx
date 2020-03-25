@@ -1,11 +1,18 @@
 import React, { Component } from "react";
-import './MemoryCard.css';
+import './MemoryCardBack.css';
 
 class MemoryCard extends Component {
   render() {
     return (
-      <div className="MemoryCard" >
+      <div className="MemoryCard">
+        <div className="MemoryCardInner">
+          <div className="MemoryCardBack">
 
+          </div>
+          <div className="MemoryCardFront">
+            hey
+          </div>
+        </div>
       </div>
     );
   }
