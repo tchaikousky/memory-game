@@ -2,10 +2,23 @@ import React, { Component } from "react";
 import './MemoryCardBack.css';
 
 class MemoryCard extends Component {
+  constructor() {
+    super();
+    this.state = { isFlipped: false };
+  }
+
+   clickHandler() {
+    this.setState({ isFlipped: !this.state.isFlipped });
+  }
+
   render() {
-    return (
-      <div className="MemoryCard">
-        <div className="MemoryCardInner">
+    let memoryCardInnerClass = "MemoryCardInner";
+    if(this.state.isFlipped) {
+      memoryCardInnerClass += " flipped";
+    }
+    return ( 
+      <div className="MemoryCard" onClick={this.clickHandler.bind(this)}>
+        <div className={memoryCardInnerClass}>
           <div className="MemoryCardBack">
 
           </div>
@@ -16,6 +29,7 @@ class MemoryCard extends Component {
       </div>
     );
   }
+ 
 }
 
 export default MemoryCard;
